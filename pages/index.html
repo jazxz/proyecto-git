@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Compra productos Informáticos</title>
+</head>
+<body>
+    <header>
+        <div class="header">    
+            <h1 class="header__Titulo-aparecer-mobile">WOL ARTICULOS INFORMÁTICOS</h1>
+            <form action="" class="header__form" >
+                <a class="header__formheader-hyper1" href="./registrarse.html"><input class="formheader-btn" type="button"  value="Registrarse"></a>
+                <a class="header__formheader-hyper2" href="./login.html"><input class="formheader-btn1" type="button"  value="Login"></a>  
+            </form>        
+            <nav class="navbar navbar-expand-sm bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Temas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./equipo.html">Equipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acercade.html">Acerca de</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>          
+            </nav>   
+        </div>        
+    </header>
+    <main>
+        <h1 class="Titulo-aparecer-desktop">WOL ARTICULOS INFORMÁTICOS</h1>
+        <div class="Titulo">
+            <h2 class="Titulo__Venta">VENTA DE ARTICULOS INFORMÁTICOS</h2>
+        </div>
+        <div class="Contenedor-main">
+            <section class="Contenedor__main-section">
+                <article class="articulo">
+                    <h3 class="articulo__Titulo">Caracteristicas del Articulo:</h3>
+                    <img class="articulo__imagen" src="../img/regalo.png" alt="compra informática">
+                    <br>
+                    <br>
+                    <a href="./productos.html"><img class="articulo__imagen-carrito" src="../img/carrito.png" alt="compra informática"></a>
+                    <br>
+                    <figcaption class="articulo__figcaption">Producto en Venta:</figcaption>
+                    <br>
+                    <p class="articulo__centrar-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi necessitatibus reprehenderit voluptatibus ullam deserunt aspernatur?</p>
+                    <br>    
+                    <ul >
+                        <li class="articulo__li-tabla">Articulo bonito</li>
+                        <li class="articulo__li-tabla">Articulo grande</li>
+                        <li class="articulo__li-tabla">Articulo robusto</li>
+                    </ul> 
+                    <table class="tabla-FAQ">
+                        <tr>
+                            <th class="tabla-FAQ__centrar" >FAQ</th>
+                        </tr>
+                        <tr>
+                            <td class="tabla-FAQ__centrar"><a  href="https://www.coderhouse.com/" target="_blank">Pagina principal del trabajo</a></td>  
+                        </tr>
+                        <tr>
+                            <td class="tabla-FAQ__centrar"><a  href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">Conceptos Básicos de HTML</a></td>
+                        </tr>
+                    </table> 
+                    <br>
+                    <form action="">
+                        <a class="tabla-Download" href="../download/listadearticulos.txt" download="listadearticulos.txt"><input class="boton" type="button"  value="Descargar lista"></a>
+                    </form>         
+                </article>
+            </section>         
+            <aside class="aside-cambiar"> 
+                <table class="aside-cambiar-tabla">
+                    <tr>
+                        <th class="aside-cambiar-th">Plugins Comercial</th>
+                    </tr>
+                    <tr>
+                        <td class="aside-cambiar-th">Versión: 7.4.1</td>  
+                    </tr>
+                    <tr>
+                        <td class="aside-cambiar-th">Instalaciones Activas: +5M</td>
+                    </tr>
+                    <tr>
+                        <td class="aside-cambiar-th">Versión WordEspress: 5.9 o Superior</td>
+                    </tr>
+                    <tr>
+                        <td class="aside-cambiar-th">Idiomas:<span>Español</span>||<span>Ingles</span></td>
+                    </tr>
+                    <tr>
+                        <td class="aside-cambiar-th">Etiquetas</td>
+                    </tr>
+                </table>  
+                <form class="form-action" action="">
+                    <div class="label-estrellas">
+                        <label  for="estrellas">Cantidad de estrellas:</label>
+                        <input  id="estrellas" type="number" name="estrella" step="1" min="1" max="5" required>
+                        <span class="validity"></span>
+                    </div>
+                    <br>
+                    <div class="btn-aside">
+                        <input  class="boton" type="submit" value="Enviar Voto">
+                        <input  class="boton1" type="reset" value="Limpiar voto">
+                    </div>
+                </form>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="Contenedor-footer">
+            <h2 class="Contenedor-footer__titulo1">MAPA UBICACIÓN</h2>
+            <h2 class="Contenedor-footer__titulo2">MEDIOS DE PAGOS</h2>            
+            <iframe class="Contenedor-mapa__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.298924002136!2d-68.81345516357132!3d-32.9028019791591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eb159067959%3A0x8eba283386e10cf7!2sGuaymall%C3%A9n%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1678593667771!5m2!1ses!2sar" width="200" height="95" style="border-right: solid 1px black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img class="Contenedor-mapa__imagen" src="../img/foter1.png" alt="compra informática">
+            <img class="Contenedor-mapa__imagen1" src="../img/pagos.png" alt="compra informática"> 
+        </div>    
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> 
+</body>
+</html>
