@@ -1338,6 +1338,12 @@ h1{
 
 @media (max-width:375px){
 
+    .titulo__venta{
+
+        font-size: small;
+
+    }
+
     .contenedor-main{
         flex-wrap: wrap;
         background-color: gold;
