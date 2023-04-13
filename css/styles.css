@@ -434,7 +434,7 @@ header{
     background-color: #ff0000;
 }
 
-.Contenedor-main{
+.contenedor-main{
     display:grid;
     overflow: scroll;
     grid-template-columns: 1fr minmax(360px,25vw);
@@ -445,7 +445,7 @@ header{
     "cuerpo1 aside2";
 }
 
-.Titulo{
+.titulo{
 
     display: flex;
     justify-content: center;
@@ -455,7 +455,7 @@ header{
 
 }
 
-.h2.Titulo__Venta {
+.h2.titulo__venta {
 
     padding-top: 0%;
     align-items: center;
@@ -573,7 +573,7 @@ h1{
 
 }
 
-.Contenedor-footer{
+.contenedor-footer{
     display:grid;
     height: 25vw;
     gap:20px;
@@ -586,7 +586,7 @@ h1{
 }
 
 
-.Contenedor-mapa{
+.contenedor-mapa{
     grid-area: mapa;
     grid-column: 1;
     grid-row: 2 ;
@@ -599,21 +599,21 @@ h1{
 
 
     
-.Contenedor-footer__titulo1{
+.contenedor-footer__titulo1{
 
     grid-area: mapa;
     grid-column: 1;
     grid-row: 1 ;
 }
 
-.Contenedor-footer__titulo2{
+.contenedor-footer__titulo2{
 
     grid-area: futuro;
     grid-column: 3;
     grid-row: 1 ;
 }
 
-.Contenedor-mapa__imagen{
+.contenedor-mapa__imagen{
 
     grid-area: tecnologia;
     grid-column: 2;
@@ -626,7 +626,7 @@ h1{
 
 }
 
-.Contenedor-mapa__imagen1{
+.contenedor-mapa__imagen1{
 
     grid-area: futuro;
     grid-column: 3;
@@ -641,7 +641,7 @@ h1{
 
 }  
 
-.tabla-FAQ-centrar{
+.tabla-faq-centrar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -654,7 +654,7 @@ h1{
     
 }
 
-.header__Titulo-aparecer-mobile{
+.header__titulo-aparecer-mobile{
 
     display: none;
 }
@@ -746,7 +746,7 @@ h1{
     "mapa frase formas"
    ; 
 }
-.Contenedor-footer__titulo1{
+.contenedor-footer__titulo1{
 
     justify-content: center;
     align-items: center;
@@ -756,7 +756,7 @@ h1{
     grid-row: 1;
 
 }
-.Contenedor-footer__titulo2{
+.contenedor-footer__titulo2{
 
     justify-content: center;
     align-items: center;
@@ -767,7 +767,7 @@ h1{
 
 }
 
-.Contenedor-mapa__map{
+.contenedor-mapa__map{
     height: 100%;
     width: 100% ;
     grid-column: 1;
@@ -775,7 +775,7 @@ h1{
 
 }
 
-.Contenedor-mapa__imagen{
+.contenedor-mapa__imagen{
     height: 100%;
     width: 100% ;
     grid-column: 2;
@@ -784,7 +784,7 @@ h1{
 
 }
 
-.Contenedor-mapa__imagen1{
+.contenedor-mapa__imagen1{
 
     height: 100%;
     width: 100% ;
@@ -861,12 +861,12 @@ h1{
 
         
     }
-    .Titulo-aparecer-desktop{
+    .titulo-aparecer-desktop{
 
         display: none;
 
     }
-    .header__Titulo-aparecer-mobile{
+    .header__titulo-aparecer-mobile{
 
         display: block;
         font-size: small;
@@ -929,7 +929,7 @@ h1{
 @media (min-width:576px) and (max-width:1059px) {
 
 
-    .Contenedor-main{
+    .contenedor-main{
 
         display: flex;
         overflow: scroll;
@@ -939,7 +939,7 @@ h1{
 
     }
 
-    .Contenedor__main-section{
+    .contenedor__main-section{
 
         flex:1;
         height: 100%;
@@ -1012,7 +1012,7 @@ h1{
 
 @media (min-width:376) and (max-width:575px){
     
-    .Titulo-Venta {
+    .titulo-venta {
 
         padding: 0%;
         align-items: center;
@@ -1023,7 +1023,7 @@ h1{
     }
     
     
-    .Contenedor-main{
+    .contenedor-main{
         background-color: gold;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1033,7 +1033,7 @@ h1{
         "articulo aside"
        ; 
     }
-    .Contenedor__main-section{
+    .contenedor__main-section{
         grid-row: 1/2;
         grid-column: 1;
         align-items: center;
@@ -1095,7 +1095,7 @@ h1{
 
     }
 
-    .tabla-FAQ{
+    .tabla-faq{
         display: flex;
         border-radius: 6px;
         justify-content: center;
@@ -1104,7 +1104,7 @@ h1{
 
     }
 
-    .tabla-FAQ__centrar{
+    .tabla-faq__centrar{
 
         font: 1rem bold black;
         justify-content: center;
@@ -1114,7 +1114,7 @@ h1{
 
     }
 
-    .tabla-Download{
+    .tabla-download{
 
         border-radius: 6px ;
         font: 1rem black bold;
@@ -1193,13 +1193,13 @@ h1{
 
     }
 
-    .Contenedor__main-section{
+    .contenedor__main-section{
 
         background-color: gold;
 
     }
 
-    .Titulo__Venta{
+    .titulo__Venta{
 
         font-size: 2.5vw;
 
@@ -1241,7 +1241,7 @@ h1{
 
 @media (max-width:575px){
 
-    .Contenedor-footer{
+    .contenedor-footer{
         max-width: 100%;
         overflow: hidden;
         display:grid;
@@ -1255,7 +1255,7 @@ h1{
        justify-items: center; 
 
     }
-    .Contenedor-footer__titulo1{
+    .contenedor-footer__titulo1{
         
         text-overflow: ellipsis;
         justify-content: center;
@@ -1270,7 +1270,7 @@ h1{
         
 
     }
-    .Contenedor-footer__titulo2{
+    .contenedor-footer__titulo2{
 
         text-overflow: ellipsis;
         justify-content: center;
@@ -1286,7 +1286,7 @@ h1{
 
     }
 
-   .Contenedor-mapa__map{
+   .contenedor-mapa__map{
 
         overflow: hidden;
         grid-column: 1;
@@ -1296,7 +1296,7 @@ h1{
 
    }
 
-   .Contenedor-mapa__imagen{
+   .contenedor-mapa__imagen{
 
         overflow: hidden;
         grid-column: 2;
@@ -1307,7 +1307,7 @@ h1{
 
    }
 
-   .Contenedor-mapa__imagen1{
+   .contenedor-mapa__imagen1{
 
     overflow: hidden;
     grid-column: 3;
@@ -1324,7 +1324,7 @@ h1{
 
 @media (max-width:375px){
 
-    h1.header__Titulo-aparecer-mobile{
+    h1.header__titulo-aparecer-mobile{
 
         font-size: small;
 
@@ -1338,7 +1338,7 @@ h1{
 
 @media (max-width:375px){
 
-    .Contenedor-main{
+    .contenedor-main{
         flex-wrap: wrap;
         background-color: gold;
         display: flex;
@@ -1348,7 +1348,7 @@ h1{
         max-height: unset;
     }
     
-    .Contenedor__main-section{
+    .contenedor__main-section{
         background-color: gold;
         scroll-snap-align: start;
         flex-basis: 100%;
@@ -1362,7 +1362,7 @@ h1{
         height: 50%;
     }
 
-    .Titulo__Venta{
+    .titulo__Venta{
 
         font-size: small;
         justify-content: center;
@@ -1424,7 +1424,7 @@ h1{
         align-items: center;
     }
 
-    .tabla-FAQ__centrar{
+    .tabla-faq__centrar{
 
         border-collapse: collapse;
         border: 1px solid black;
@@ -1434,7 +1434,7 @@ h1{
 
     }
 
-    .tabla-FAQ__centrar{
+    .tabla-faq__centrar{
 
         border: 2px solid black;
         justify-content: center;
@@ -1466,7 +1466,7 @@ h1{
 
 @media (max-width:375px){
     
-    div.Contenedor-footer{
+    div.contenedor-footer{
 
         height: 48vh;
         width: 100%;
@@ -1484,7 +1484,7 @@ h1{
         
     }
 
-    h2.Contenedor-footer__titulo1{
+    h2.contenedor-footer__titulo1{
 
         grid-column: 1;
         grid-row: 1;
@@ -1495,7 +1495,7 @@ h1{
 
     }
 
-    iframe.Contenedor-mapa__map{
+    iframe.contenedor-mapa__map{
 
         grid-column: 1;
         grid-row: 2;
@@ -1507,7 +1507,7 @@ h1{
 
     }
 
-    .Contenedor-mapa__imagen{
+    .contenedor-mapa__imagen{
 
         grid-column: 1;
         grid-row: 3;
@@ -1519,7 +1519,7 @@ h1{
 
 
     }
-    .Contenedor-footer__titulo2{
+    .contenedor-footer__titulo2{
 
         grid-column: 1;
         grid-row: 4;
@@ -1530,7 +1530,7 @@ h1{
 
     }
     
-    .Contenedor-mapa__imagen1{
+    .contenedor-mapa__imagen1{
 
         grid-column: 1;
         grid-row: 5;
@@ -1931,7 +1931,7 @@ h1{
 
 @media (max-width:575px){
     
-    div.Contenedor-footers{
+    div.contenedor-footers{
 
         height: 100%;
         width: 100%;
@@ -1951,7 +1951,7 @@ h1{
         
     }
 
-    h2.Contenedor-footers__titulo1{
+    h2.contenedor-footers__titulo1{
 
         grid-column: 1;
         grid-row: 1;
@@ -1963,7 +1963,7 @@ h1{
 
     }
 
-    iframe.Contenedor-mapas__map{
+    iframe.contenedor-mapas__map{
 
         grid-column: 1;
         grid-row: 2;
@@ -1978,7 +1978,7 @@ h1{
 
     }
 
-    .Contenedor-mapas__imagen{
+    .contenedor-mapas__imagen{
 
         grid-column: 1;
         grid-row: 3;
@@ -1990,7 +1990,7 @@ h1{
 
 
     }
-    .Contenedor-footers__titulo2{
+    .contenedor-footers__titulo2{
 
         grid-column: 1;
         grid-row: 4;
@@ -2002,7 +2002,7 @@ h1{
 
     }
     
-    .Contenedor-mapas__imagen1{
+    .contenedor-mapas__imagen1{
 
         grid-column: 1;
         grid-row: 5;
@@ -2021,7 +2021,7 @@ h1{
 
 @media (min-width:575px){
     
-    div.Contenedor-footers{
+    div.contenedor-footers{
 
         height: 100%;
         width: 100%;
@@ -2040,7 +2040,7 @@ h1{
         
     }
 
-    h2.Contenedor-footers__titulo1{
+    h2.contenedor-footers__titulo1{
 
         grid-column: 1;
         grid-row: 1;
@@ -2052,7 +2052,7 @@ h1{
 
     }
 
-    iframe.Contenedor-mapas__map{
+    iframe.contenedor-mapas__map{
 
         grid-column: 1;
         grid-row: 2;
@@ -2067,7 +2067,7 @@ h1{
 
     }
 
-    .Contenedor-mapas__imagen{
+    .contenedor-mapas__imagen{
 
         grid-column: 2;
         grid-row: 2;
@@ -2079,7 +2079,7 @@ h1{
 
 
     }
-    .Contenedor-footers__titulo2{
+    .contenedor-footers__titulo2{
 
         grid-column: 3;
         grid-row: 1;
@@ -2091,7 +2091,7 @@ h1{
 
     }
     
-    .Contenedor-mapas__imagen1{
+    .contenedor-mapas__imagen1{
 
         grid-column: 3;
         grid-row: 2;
