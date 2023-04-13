@@ -1,0 +1,2 @@
+computadora $130
+teclado $80
