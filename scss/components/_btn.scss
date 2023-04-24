@@ -1,0 +1,53 @@
+.formheader-btn{
+    width: 100px;        
+    margin: 1vh;
+    background-color: #1b8eaa;
+    border-radius: 5px;
+    }
+.formheader-btn1{
+    width: 100px;        
+    margin: 1vh;
+    background-color: #1b8eaa;
+    border-radius: 5px;
+    }
+
+.btn-aside{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 25%;
+    row-gap: 8px;
+
+
+    &__boton{
+            
+        font-size: medium;
+        font-family: $fuente-principal;
+        border:$color-secundario 2px bold;
+        border-radius: 2px;
+        }
+    } 
+    
+    
+
+@media (min-width:576px) and (max-width:1059px) {
+
+    .btn-aside{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__boton{
+            gap: 10px;
+            max-width: 90px;
+            height: 40px;
+            row-gap: 30px;
+            font-size: small;
+            text-align: center;
+            justify-content: center;
+        }
+         
+    }
+    
+}

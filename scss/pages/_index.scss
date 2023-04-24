@@ -1,0 +1,395 @@
+
+.titulo-aparecer-desktop{
+
+   display:none
+
+   
+}
+
+.titulo-aparecer-mobile{
+
+    display: none   
+
+}
+
+
+.titulo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$color-primario ;
+
+    &__venta {
+
+        padding-top: 0%;
+        align-items: center;
+        justify-content: center;
+        font: bold 2rem black;
+        background-color: $color-primario;
+        margin: 0%;
+    }
+
+}
+
+.contenedor-main{
+
+    display:grid;
+    overflow: scroll;
+    grid-template-columns: 1fr minmax(360px,25vw);
+    grid-template-rows: 70vw;
+    background-color: $color-primario;
+    grid-template-areas: 
+    "cuerpo aside1"
+    "cuerpo1 aside2";
+
+    &__section{
+
+        justify-content: center;
+        align-items: center;
+        grid-column: 1;
+        grid-row: 1/2;
+        height: 60vh;
+    
+
+        .articulo{
+            padding:20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center ;
+            align-items: center;
+            vertical-align: center;
+            overflow: hidden;
+
+            &__titulo{
+                font-size: 2rem;
+            }
+
+            &__imagen{
+                padding-top: 20%;
+            }
+            &__imagen-carrito{
+                padding-top: 30%;
+            }
+            &__figcaption{
+                padding-top: 3%;
+                font-family:$fuente-principal;
+            }
+            &__centrar-texto{
+                font-family:$fuente-principal;  
+            }
+   
+            .tabla-li-tabla{
+                border-radius: 2px;
+                border:1px $color-secundario;
+            }
+
+            &__tabla-faq{
+                border-radius: 3px;
+                border: solid 2px $color-secundario;
+                display: flex;
+                flex-direction: column;
+                margin:20px; 
+          
+                
+                .tabla-faq__centrar{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    border-radius: 3px;
+                    border: solid 2px $color-secundario;
+
+                }
+            }                   
+        
+        }
+
+    }
+    &__aside-cambiar{
+
+        overflow: hidden;            
+        
+        .aside-cambiar-tabla{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 35vh; 
+
+            .aside-cambiar-th{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3px;
+                border: solid 2px $color-secundario;
+                
+            }
+
+        }
+
+        .form-action{
+
+            align-items: center;
+            justify-content: center;
+
+            &__label-estrellas{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+
+            
+        }
+    }
+} 
+
+.contenedors{
+
+    display:grid;
+    height: 25vw;
+    gap:20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(60px,10vw) 1fr;
+    background-color: rgb(0, 225, 255);
+    grid-template-areas: 
+    "mapa tecnologia futuro"
+    "mapa tecnologia futuro";
+
+    &-footer__titulo1{
+        padding-left: 10%;
+        padding-top: 10%;
+        grid-area: mapa;
+        grid-column: 1;
+        grid-row: 1 ;
+    }
+
+    &-footer__titulo2{
+        padding-left: 10%;
+        padding-top: 10%;
+        grid-area: futuro;
+        grid-column: 3;
+        grid-row: 1 ;
+    }
+
+    &-mapa__map{
+        
+        height: 100%;
+        width: 100% ;
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+    &-mapa__imagen{
+
+        height: 100%;
+        width: 100% ;
+        grid-column: 2;
+        grid-row: 2;
+
+    }
+
+    &-mapa__imagen1{
+
+        height: 100%;
+        width: 100% ;
+        grid-column: 3;
+        grid-row: 2;
+
+    }
+}
+
+
+
+@media (min-width:576px) and (max-width:1059px) {
+
+    .titulo-aparecer-desktop{
+ 
+        display:none;
+       
+    }
+    
+    .titulo-aparecer-mobile{
+    
+        color: blue;
+        margin-left: 30%;
+        margin-right: 0%;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+        background-color: $color-primario;
+    
+    }
+
+    .titulo{
+        &__venta{
+            font-size: medium;
+            font-family: $fuente-principal;
+        }
+   
+    }
+    .contenedor-main{
+
+        display: flex;
+        overflow: scroll;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: 2;
+
+        &__section{
+            flex:1;
+            height: 20vh;
+
+            .articulo{
+
+                &__titulo{
+
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: $tamaño-letra;
+                }
+
+                &__centrar-texto{
+
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: $tamaño-letra1;
+                }
+                
+                &__tabla{
+
+                    .tabla-li-tabla{
+
+                        font-size: $tamaño-letra1;
+                        color: red;
+
+                    }
+
+
+                }
+
+            }
+            
+        }
+    
+    
+    
+        &__aside-cambiar{
+
+            flex:1;
+            overflow: scroll;
+            background-image: $color-primario;
+            background-size: auto;
+            background-attachment: fixed;    
+            background-repeat: no-repeat;
+            height:  100%;
+            width: auto;
+            background-position: center center; 
+            position: relative;
+            display: inline;
+        
+            .form.form-action{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+
+            .form-action{
+
+                &__label-estrellas{
+
+                    &__estrellas{
+
+                        font-size: $tamaño-letra1;
+                        color: green;
+
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .contenedors{
+
+        max-width: 100%;
+        overflow: hidden;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(20px,5vh) minmax(100px,20vh);
+        grid-template-areas: 
+        "mapa frase formas"
+        "mapa frase formas"
+       ; 
+       align-items: center; 
+       justify-items: center;
+
+        &-footer__titulo1{
+        
+            text-overflow: ellipsis;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            padding-top: 10%;
+            grid-column: 1;
+            grid-row: 1;
+            max-height: 100%;
+            white-space: nowrap;
+       
+        }
+
+        &-footer__titulo2{
+
+            text-overflow: ellipsis;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            padding-top: 10%;
+            grid-column: 3;
+            grid-row: 1;
+            max-height: 100%;
+            white-space: nowrap;
+     
+        }
+        
+        &-mapa__map{
+
+            overflow: hidden;
+            grid-column: 1;
+            grid-row: 2;
+            width: 30vw; 
+            height: 20vh;
+
+        }
+        
+        &-mapa__imagen{
+
+            overflow: hidden;
+            grid-column: 2;
+            grid-row: 2;
+            width: 30vw; 
+            height: 20vh;
+        }
+
+        &-mapa__imagen1{
+
+            overflow: hidden;
+            grid-column: 3;
+            grid-row: 2;
+            width: 30vw; 
+            height: 20vh;
+        
+        }
+
+    }
+
+}

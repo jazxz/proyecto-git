@@ -1,0 +1,73 @@
+.header{
+
+    background: $color-primario;
+
+    &__titulo-aparecer-mobile{
+        display: none;  
+    }
+
+    &__form{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+    }    
+          
+}
+
+@media (max-width:575px){
+
+    .header{
+        background-color:  #e7771b62;
+        display: grid;
+        grid-template-columns: minmax(50px,5vw) 1fr minmax(100px,10vw);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "logo titulo btn-barra"
+        "logo titulo btn-barra"
+        ;
+        
+        &__titulo-aparecer-mobile{
+
+            display: block;
+            font-size: small;
+            justify-content: center;
+            align-items: center;
+            grid-column: 2;
+            grid-row: 1;
+            background: #e7771b62;
+    
+        }
+        &__form{
+            display: flex;
+            grid-column: 3;
+            grid-row: 1;
+
+            &__formheader-hyper1{
+
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                width: 100%;
+            }
+            &__formheader-hyper2{
+
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                width: 100%;
+            }
+
+
+
+
+
+        }
+
+        
+
+
+
+    }    
+}
