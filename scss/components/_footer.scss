@@ -1,0 +1,32 @@
+@media (max-width:375px){
+
+    .contenedors{
+
+        height: 48vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 3vh) repeat(2, 10vh) repeat(1, 3vh) repeat(1, 10vh) ;
+        grid-template-areas: 
+        "Mapa"
+        "Telefonos"
+        "Formas"
+        ; 
+        align-items: center; 
+        justify-items: center;
+        
+        &-footer__titulo1{
+
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+            top: 0;
+            padding:0%;
+            margin: 0;
+    
+        }
+
+        
+    }
+
+}

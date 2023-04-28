@@ -393,3 +393,98 @@
     }
 
 }
+
+
+@media (max-width:375px){
+
+    .titulo{   
+        &__venta{
+            font-size: small;
+        }
+    }
+
+    .contenedor-main{
+        flex-wrap: wrap;
+        background-color: gold;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        max-height: unset;
+
+        &__section{
+            background-color: gold;
+            scroll-snap-align: start;
+            flex-basis: 100%;
+            height: 50%;
+            .articulo{
+                &__titulo{
+                    font-size: 1rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &__figcaption{
+
+                    font-size: 0.8rem;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                &__centrar-texto{
+
+                    font-size: 0.8rem;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                &__tabla{
+
+                    .tabla-li-tabla{
+
+                        font-size: 0.8rem;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                }
+
+                &__tabla-faq{
+
+                    .tabla-faq__centrar{
+                        border: 2px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                }
+
+            }
+           
+        }
+
+        &__aside-cambiar{
+
+            max-width: 100%;
+            overflow-x: auto;
+            padding-top: 0px;
+
+            .aside-cambiar-tabla{
+
+                width: 100%;
+                white-space: normal;
+                font-size: small;
+                margin-top: 5%;
+
+            }
+
+            .form-action{
+
+                padding-bottom: 10%;
+
+            }
+        }
+    }  
+} 

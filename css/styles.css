@@ -134,6 +134,42 @@
     width: 100%;
   }
 }
+@media (max-width: 375px) {
+  .header {
+    background-color: rgba(231, 119, 27, 0.3843137255);
+  }
+  .header__titulo-aparecer-mobile {
+    display: flex;
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10vw;
+  }
+  .header .navbar.navbar-expand-sm.bg-body-tertiary {
+    grid-row: 2;
+    grid-column: 1;
+  }
+}
+@media (max-width: 375px) {
+  .contenedors {
+    height: 48vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 3vh) repeat(2, 10vh) repeat(1, 3vh) repeat(1, 10vh);
+    grid-template-areas: "Mapa" "Telefonos" "Formas";
+    align-items: center;
+    justify-items: center;
+  }
+  .contenedors-footer__titulo1 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    top: 0;
+    padding: 0%;
+    margin: 0;
+  }
+}
 .titulo-aparecer-desktop {
   display: none;
 }
@@ -404,6 +440,66 @@
     grid-row: 2;
     width: 30vw;
     height: 20vh;
+  }
+}
+@media (max-width: 375px) {
+  .titulo__venta {
+    font-size: small;
+  }
+  .contenedor-main {
+    flex-wrap: wrap;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    max-height: unset;
+  }
+  .contenedor-main__section {
+    background-color: gold;
+    scroll-snap-align: start;
+    flex-basis: 100%;
+    height: 50%;
+  }
+  .contenedor-main__section .articulo__titulo {
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-main__section .articulo__figcaption {
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-main__section .articulo__centrar-texto {
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-main__section .articulo__tabla .tabla-li-tabla {
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-main__section .articulo__tabla-faq .tabla-faq__centrar {
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedor-main__aside-cambiar {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-top: 0px;
+  }
+  .contenedor-main__aside-cambiar .aside-cambiar-tabla {
+    width: 100%;
+    white-space: normal;
+    font-size: small;
+    margin-top: 5%;
+  }
+  .contenedor-main__aside-cambiar .form-action {
+    padding-bottom: 10%;
   }
 }
 
