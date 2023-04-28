@@ -256,6 +256,7 @@
 
                 &__centrar-texto{
 
+                   
                     justify-content: center;
                     align-items: center;
                     text-align: center;
@@ -395,7 +396,7 @@
 }
 
 
-@media (max-width:375px){
+@media (max-width:575px){
 
     .titulo{   
         &__venta{
@@ -433,9 +434,11 @@
 
                 &__centrar-texto{
 
+                    display: flex;
                     font-size: 0.8rem;
                     justify-content: center;
                     align-items: center;
+                    text-align: center;
 
                 }
 
@@ -486,5 +489,88 @@
 
             }
         }
-    }  
-} 
+    }
+    
+    .contenedors{
+
+        height: 48vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 3vh) repeat(2, 10vh) repeat(1, 3vh) repeat(1, 10vh) ;
+        grid-template-areas: 
+        "Titulo"
+        "Mapa"
+        "Imagen"
+        "Imagen"
+        "Titulo2"
+        "Imagen2"
+        "Imagen2"
+        ;
+
+        align-items: center; 
+        justify-items: center;
+        
+        &-footer__titulo1{
+
+            grid-column: 1;
+            grid-row: 1;
+            text-align: center;
+            top: 0;
+            padding:0%;
+            margin: 0;
+            font-size: small;
+    
+        }
+
+        &-mapa__map{
+
+            grid-column: 1;
+            grid-row: 2;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &-mapa__imagen{
+
+            grid-column: 1;
+            grid-row: 3;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            justify-content: center;
+
+
+
+        }
+
+        &-footer__titulo2{
+
+
+            grid-column: 1;
+            grid-row: 4;
+            text-align: center;
+            top: 0;
+            padding:0%;
+            margin: 0;
+            font-size: small;
+
+        }
+
+        &-mapa__imagen1{
+
+            grid-column: 1;
+            grid-row: 5;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            justify-content: center;
+        }
+     
+    }
+
+}
