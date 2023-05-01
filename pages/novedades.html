@@ -4,64 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novedades Informáticas de nuevos productos">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Novedades Informáticas</title>
 </head>
 <body>
     <header>
-        <nav>
-            <table class="tabla">
-                <tr><td><a class="poin" href="./index.html">Temas</a></td>
-                <td><a class="poin" href="./novedades.html">Novedades</a></td>
-                <td><a class="poin" href="./productos.html">Productos</a></td>
-                <td><a class="poin" href="./equipo.html">Equipo</a></td>
-                <td><a class="poin" href="./acercade.html">Acerca de</a></td></tr>
-            </table>
-        </nav>
-        <hr>
+        <div class="header">    
+            <h1 class="header__titulo-aparecer-mobile">WOL ARTICULOS INFORMÁTICOS</h1>
+            <form action="" class="header__form" >
+                <a class="header__formheader-hyper1" href="./registrarse.html"><input class="formheader-btn" type="button"  value="Registrarse"></a>
+                <a class="header__formheader-hyper2" href="./login.html"><input class="formheader-btn1" type="button"  value="Login"></a>  
+            </form>        
+            <nav class="navbar navbar-expand-sm bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Temas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/equipo.html">Equipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/acercade.html">Acerca de</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>          
+            </nav>   
+        </div>        
     </header>
     <main class="maincolor">
-        <div class="barra">
-        <img src="../img/barra.png" alt="barra informática">
+        <div class="maincolor__barra">
+            <img  class="maincolor__imagenbarra" src="../img/barra.png" alt="barra informática">
         </div>
-        <section>
-            <div>
-                <h2 class="titulo3">NOVEDADES</h2>
-            </div>
-            <article>  
-            <div>
-                <h3 >PC uso profesional</h3>
+        <section class="dividir_articulos">
+            
+            <h2 class="dividir_articulos__titulo3">NOVEDADES</h2>
+            
+            <article class="dividir_articulos__articulopro">  
+            
+                <h3 class="descripcion">PC uso profesional</h3>
                 <img class="imagen5" src="../img/pc-profesional1.jpg" alt="barra informática"> 
-                <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, blanditiis id minima inventore facilis, incidunt quis officiis, aut consectetur neque fuga. Suscipit veniam, distinctio numquam ut impedit expedita quasi sapiente?</p>
-            </div>    
+                <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, blanditiis id minima inventore facilis, incidunt quis officiis, aut consectetur neque fuga. Suscipit veniam, distinctio numquam ut impedit expedita quasi sapiente?</p>
+               
             </article> 
-            <article>
-                <div>
-                    <h3 >PC multimedia</h3>
+            <article class="dividir_articulos__articulomul">
+                
+                    <h3 class="descripcion">PC multimedia</h3>
                     <img  class="imagen5" src="../img/pcmultimedia.jpg" alt="barra informática">
                     <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum qui repudiandae sunt dolorem, quisquam, magni molestias a consectetur voluptate porro voluptas recusandae explicabo minima deserunt in modi ipsam, doloremque labore.</p>
-                </div>
+                
             </article>
-            <article>
-            <div>
-                <h3 >Netbook Gamer</h3> 
+            <article class="dividir_articulos__articulogamer">
+            
+                <h3 class="descripcion">Netbook Gamer</h3> 
                 <img  class="imagen5" src="../img/netboock-gamer.jpg" alt="barra informática">
                 <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis facere eos minus soluta nulla ea, at delectus quae quaerat repudiandae molestias eum veniam quod obcaecati debitis deserunt vero saepe deleniti?</p>
-            </div>
+            
             </article>   
-        </section> 
-        <br>    
+        </section>     
     </main>
     <footer>
-        <div>
-            <h2 class="imagen3">MAPA UBICACIÓN</h2>
-            <h2 class="imagen4">MEDIOS DE PAGOS</h2>
-        </div>
-        <div>
-            <iframe class="frame1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.298924002136!2d-68.81345516357132!3d-32.9028019791591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eb159067959%3A0x8eba283386e10cf7!2sGuaymall%C3%A9n%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1678593667771!5m2!1ses!2sar" width="200" height="180" style="border-right: solid 1px black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <img class="marcar2" src="../img/foter1.png" alt="compra informática">
-            <img class="marcar3" src="../img/pagos.png" alt="compra informática"> 
+        <div class="contenedors">
+            <h2 class="contenedors-footer__titulo1">MAPA UBICACIÓN</h2>
+            <h2 class="contenedors-footer__titulo2">MEDIOS DE PAGOS</h2>            
+            <iframe class="contenedors-mapa__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.298924002136!2d-68.81345516357132!3d-32.9028019791591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eb159067959%3A0x8eba283386e10cf7!2sGuaymall%C3%A9n%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1678593667771!5m2!1ses!2sar" width="200" height="95" style="border-right: solid 1px black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img class="contenedors-mapa__imagen" src="../img/foter1.png" alt="compra informática">
+            <img class="contenedors-mapa__imagen1" src="../img/pagos.png" alt="compra informática"> 
         </div>    
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 </html>

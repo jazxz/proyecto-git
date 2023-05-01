@@ -1,0 +1,267 @@
+.main-equipo{
+
+    overflow:hidden;
+
+    .mostrar{
+
+        font-size: medium;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30vw;
+
+    }
+
+    .section {
+
+        background-color:antiquewhite  ;
+    
+        .articulo{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-template-areas: 
+            "equipo equipo1"
+            "equipo equipo1"
+            ; 
+            &__dividir-imagen1{
+
+                justify-content: center;
+                align-items: center;
+            
+            }
+            
+
+            &__dividir1{
+    
+                grid-column: 1;
+                grid-row: 1;
+                justify-content: center;
+                align-items: center;
+                font: 1rem;
+                padding-left: 13vw;
+                
+                &__remarcar{
+
+                    justify-content: center;
+                    align-items: center;
+                
+                }
+            }
+
+            &__dividir2{
+    
+                grid-column: 1;
+                grid-row: 2;
+                justify-content: center;
+                align-items: center;
+                font: 1rem;
+                padding-left: 13vw;
+               
+            
+            }
+
+            &__dividir3{
+    
+                grid-column: 2;
+                grid-row: 1;
+                justify-content: center;
+                align-items: center;
+                font: 1rem;
+                padding-left: 13vw;
+               
+            
+            }
+
+            &__dividir4{
+    
+                grid-column: 2;
+                grid-row: 2;
+                justify-content: center;
+                align-items: center;
+                font: 1rem;
+                padding-left: 13vw;
+               
+            
+            }
+
+
+        }
+    }
+
+}
+
+@media (min-width:576px) and (max-width:1059px) {
+
+    .main-equipo{
+
+        overflow: hidden;
+        background-color: antiquewhite  ;
+    
+        .mostrar{
+            
+            padding-left: 0%;
+            padding-right: 0%;
+            font-size: medium;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section{
+
+            overflow: auto;
+
+            .articulo{
+                
+                overflow: scroll;
+                display: grid;
+                grid-template-columns: repeat(2,50vw);
+                grid-template-rows: repeat(2,50vw);
+                grid-template-areas: 
+                "equipo1"
+                "equipo2"
+                "equipo3"
+                "equipo4"
+                ; 
+                
+                margin: 0%;
+                grid-gap: 10px; 
+
+                &__dividir1{
+                    grid-row: 1;
+                    grid-column: 1;
+                    padding-left: 5%;
+                    justify-content: center;
+                    align-items: center;
+                    font: 1rem;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    
+
+                    .articulo__remarcar{
+                        font-size: medium;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                   
+
+                }
+
+                &__dividir2{
+                    grid-row: 1;
+                    grid-column: 2;
+                    padding-left: 5%;
+                    justify-content: center;
+                    align-items: center;
+                    font: 1rem;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                }
+
+                &__dividir3{
+                    grid-row: 2;
+                    grid-column: 1;
+                    
+                    justify-content: center;
+                    align-items: center;
+                    font: 1rem;
+                    padding-left: 5%;
+                    width: 100%;
+                    height: 100%;
+                   
+                }
+                &__dividir4{
+                    grid-row: 2;
+                    grid-column: 2;
+                    justify-content: center;
+                    align-items: center;
+                    font: 1rem;
+                    padding-right: 5%;
+                    padding-left: 5%;
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+
+
+            }
+    
+    
+        }
+
+    }    
+}
+
+@media (max-width:575px){
+
+    .main-equipo{
+
+        overflow: hidden;
+        background-color: antiquewhite  ;
+       
+        .mostrar{
+
+            font-size: small;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .section{
+
+            .articulo{
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,1fr);
+                grid-template-areas: 
+                "equipo1"
+                "equipo2"
+                "equipo3"
+                "equipo4"
+                ;
+                    
+                &__dividir1{
+
+                    grid-row: 1;
+                    grid-column: 1;
+                    max-width: 100%;
+                
+                }
+
+                &__dividir2{
+
+                    grid-row: 2;
+                    grid-column: 1;
+                    max-width: 100%;
+                
+                }
+
+                &__dividir3{
+
+                    grid-row: 3;
+                    grid-column: 1;
+                    max-width: 100%;
+                
+                }
+
+                &__dividir4{
+
+                    grid-row: 4;
+                    grid-column: 1;
+                    max-width: 100%;
+                }
+
+            }
+
+        }
+        
+
+    }
+    
+}

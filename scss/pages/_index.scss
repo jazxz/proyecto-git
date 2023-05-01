@@ -151,10 +151,10 @@
 .contenedors{
 
     display:grid;
-    height: 25vw;
+    height: 20vw;
     gap:20px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: minmax(60px,10vw) 1fr;
+    grid-template-rows: minmax(30px,5vw) minmax(30px,10vw);
     background-color: rgb(0, 225, 255);
     grid-template-areas: 
     "mapa tecnologia futuro"
@@ -166,6 +166,7 @@
         grid-area: mapa;
         grid-column: 1;
         grid-row: 1 ;
+        font-size: large;
     }
 
     &-footer__titulo2{
@@ -174,6 +175,7 @@
         grid-area: futuro;
         grid-column: 3;
         grid-row: 1 ;
+        font-size: large;
     }
 
     &-mapa__map{

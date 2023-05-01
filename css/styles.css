@@ -48,6 +48,24 @@
     justify-content: center;
   }
 }
+@media (max-width: 575px) {
+  .formheader-btn {
+    font-size: 10px;
+    width: 22vw;
+  }
+  .formheader-btn1 {
+    font-size: 10px;
+    width: 22vw;
+  }
+  .boton {
+    font-size: 10px;
+    width: 22vw;
+  }
+  .btn-aside__boton {
+    font-size: 10px;
+    width: 22vw;
+  }
+}
 .navbar.navbar-expand-sm.bg-body-tertiary {
   background-color: rgba(231, 119, 27, 0.3843137255) !important;
   background-color: rgb(231, 186, 170);
@@ -150,6 +168,15 @@
     grid-column: 1;
   }
 }
+.centrar {
+  font-size: large;
+  color: blue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .titulo-aparecer-desktop {
   display: none;
 }
@@ -263,10 +290,10 @@
 
 .contenedors {
   display: grid;
-  height: 25vw;
+  height: 20vw;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(60px, 10vw) 1fr;
+  grid-template-rows: minmax(30px, 5vw) minmax(30px, 10vw);
   background-color: rgb(0, 225, 255);
   grid-template-areas: "mapa tecnologia futuro" "mapa tecnologia futuro";
 }
@@ -276,6 +303,7 @@
   grid-area: mapa;
   grid-column: 1;
   grid-row: 1;
+  font-size: large;
 }
 .contenedors-footer__titulo2 {
   padding-left: 10%;
@@ -283,6 +311,7 @@
   grid-area: futuro;
   grid-column: 3;
   grid-row: 1;
+  font-size: large;
 }
 .contenedors-mapa__map {
   height: 100%;
@@ -536,6 +565,391 @@
     width: 50%;
     justify-content: center;
   }
+}
+.main-equipo {
+  overflow: hidden;
+}
+.main-equipo .mostrar {
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30vw;
+}
+.main-equipo .section {
+  background-color: antiquewhite;
+}
+.main-equipo .section .articulo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "equipo equipo1" "equipo equipo1";
+}
+.main-equipo .section .articulo__dividir-imagen1 {
+  justify-content: center;
+  align-items: center;
+}
+.main-equipo .section .articulo__dividir1 {
+  grid-column: 1;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  font: 1rem;
+  padding-left: 13vw;
+}
+.main-equipo .section .articulo__dividir1__remarcar {
+  justify-content: center;
+  align-items: center;
+}
+.main-equipo .section .articulo__dividir2 {
+  grid-column: 1;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+  font: 1rem;
+  padding-left: 13vw;
+}
+.main-equipo .section .articulo__dividir3 {
+  grid-column: 2;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  font: 1rem;
+  padding-left: 13vw;
+}
+.main-equipo .section .articulo__dividir4 {
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: center;
+  align-items: center;
+  font: 1rem;
+  padding-left: 13vw;
+}
+
+@media (min-width: 576px) and (max-width: 1059px) {
+  .main-equipo {
+    overflow: hidden;
+    background-color: antiquewhite;
+  }
+  .main-equipo .mostrar {
+    padding-left: 0%;
+    padding-right: 0%;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-equipo .section {
+    overflow: auto;
+  }
+  .main-equipo .section .articulo {
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 50vw);
+    grid-template-areas: "equipo1" "equipo2" "equipo3" "equipo4";
+    margin: 0%;
+    grid-gap: 10px;
+  }
+  .main-equipo .section .articulo__dividir1 {
+    grid-row: 1;
+    grid-column: 1;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+    font: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .main-equipo .section .articulo__dividir1 .articulo__remarcar {
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-equipo .section .articulo__dividir2 {
+    grid-row: 1;
+    grid-column: 2;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+    font: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .main-equipo .section .articulo__dividir3 {
+    grid-row: 2;
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    font: 1rem;
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  .main-equipo .section .articulo__dividir4 {
+    grid-row: 2;
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+    font: 1rem;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .main-equipo {
+    overflow: hidden;
+    background-color: antiquewhite;
+  }
+  .main-equipo .mostrar {
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-equipo .section .articulo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "equipo1" "equipo2" "equipo3" "equipo4";
+  }
+  .main-equipo .section .articulo__dividir1 {
+    grid-row: 1;
+    grid-column: 1;
+    max-width: 100%;
+  }
+  .main-equipo .section .articulo__dividir2 {
+    grid-row: 2;
+    grid-column: 1;
+    max-width: 100%;
+  }
+  .main-equipo .section .articulo__dividir3 {
+    grid-row: 3;
+    grid-column: 1;
+    max-width: 100%;
+  }
+  .main-equipo .section .articulo__dividir4 {
+    grid-row: 4;
+    grid-column: 1;
+    max-width: 100%;
+  }
+}
+.main-acercade {
+  background-color: violet;
+}
+.main-acercade .section-acercade .articulode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-acercade .section-acercade .articulode__tecnologia {
+  width: 100%;
+  height: 100%;
+}
+.main-acercade .section-acercade .articulode__parrafo {
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main-acercade .section-acercade .articulodes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "Latecnologia Losdetalles Lagente";
+}
+.main-acercade .section-acercade .articulodes__ordenar1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.main-acercade .section-acercade .articulodes__ordenar1 .articulodes__titulo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.main-acercade .section-acercade .articulodes__ordenar2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.main-acercade .section-acercade .articulodes__ordenar2 .articulodes__titulo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.main-acercade .section-acercade .articulodes__ordenar3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.main-acercade .section-acercade .articulodes__ordenar3 .articulodes__titulo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+.main-acercade .section-acercade .nuestrahistoria_titulo {
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-acercade .section-acercade .declaraciondederechos_titulo {
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .main-acercade {
+    background-color: violet;
+  }
+  .main-acercade .section-acercade .articulode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-acercade .section-acercade .articulode__tecnologia {
+    width: 100%;
+    height: 100%;
+  }
+  .main-acercade .section-acercade .articulode__parrafo {
+    text-align: center;
+    justify-content: center;
+    font-size: small;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .main-acercade .section-acercade .articulodes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "Latecnologia Losdetalles Lagente";
+  }
+  .main-acercade .section-acercade .articulodes__ordenar1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .main-acercade .section-acercade .articulodes__ordenar1 .articulodes__titulo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+  }
+  .main-acercade .section-acercade .articulodes__ordenar2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .main-acercade .section-acercade .articulodes__ordenar2 .articulodes__titulo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+  }
+  .main-acercade .section-acercade .articulodes__ordenar3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .main-acercade .section-acercade .articulodes__ordenar3 .articulodes__titulo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+  }
+  .parrafo__modificar {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+  }
+  .parrafo__modificar1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    padding-bottom: 10%;
+  }
+}
+.maincolor__barra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+.maincolor__barra__imagenbarra {
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.maincolor .dividir_articulos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(60px, 5vw) repeat(1, 100%);
+  grid-template-areas: "novedades novedades novedades" "PCusoprofesional PCmultimedia PCgamer";
+  overflow: scroll;
+}
+.maincolor .dividir_articulos__titulo3 {
+  grid-column: 1/4;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+  padding-top: 2%;
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+.maincolor .dividir_articulos__articulopro {
+  grid-column: 1;
+  grid-row: 2;
+  overflow: hidden;
+}
+.maincolor .dividir_articulos__articulopro .descripcion {
+  text-align: center;
+  font-size: medium;
+}
+.maincolor .dividir_articulos__articulopro .imagen5 {
+  width: 75%;
+  height: 60%;
+  padding-left: 15%;
+}
+.maincolor .dividir_articulos__articulomul {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.maincolor .dividir_articulos__articulomul .descripcion {
+  text-align: center;
+  font-size: medium;
+}
+.maincolor .dividir_articulos__articulomul .imagen5 {
+  width: 75%;
+  height: 60%;
+  padding-left: 15%;
+}
+.maincolor .dividir_articulos__articulogamer {
+  grid-column: 3;
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.maincolor .dividir_articulos__articulogamer .descripcion {
+  text-align: center;
+  font-size: medium;
+}
+.maincolor .dividir_articulos__articulogamer .imagen5 {
+  width: 75%;
+  height: 60%;
+  padding-left: 15%;
 }
 
 /*# sourceMappingURL=styles.css.map */
