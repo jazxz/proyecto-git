@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nuestro equipo de trabajo a su presentación">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Equipo de trabajo Informático</title>
 </head>
@@ -46,10 +48,10 @@
         </div>        
     </header>
     <main class="main-equipo">
-        <h2 class="mostrar">NUESTRO EQUIPO DE INFORMÁTICOS Y COMPAÑEROS DE TRABAJO</h2>
+        <h2 class="mostrar animate__animated animate__flipInY">NUESTRO EQUIPO DE INFORMÁTICOS Y COMPAÑEROS DE TRABAJO</h2>
         <section class="section">
             <article class="articulo">
-                <div class="articulo__dividir1">
+                <div class="articulo__dividir1" data-aos="fade-up-left">
                     <img class="articulo__dividir-imagen1" src="../img/ana.png" alt="Equipo">
                     <ul>
                         <li><span class="articulo__remarcar"> Puesto Laboral:</span> Atención al cliente</li>
@@ -57,7 +59,7 @@
                         <li><span class="articulo__remarcar"> Antecedentes laborales:</span> 10 años</li>
                     </ul>
                 </div>
-                <div class="articulo__dividir2">
+                <div class="articulo__dividir2" data-aos="fade-down-right">
                     <img class="articulo__dividir-imagen1" src="../img/david.png" alt="Equipo">
                     <ul>
                         <li><span class="articulo__remarcar"> Puesto Laboral:</span> Servicio Técnico</li>
@@ -65,7 +67,7 @@
                         <li><span class="articulo__remarcar"> Antecedentes laborales:</span> 7 años</li>
                     </ul>
                 </div>
-                <div class="articulo__dividir3">
+                <div class="articulo__dividir3" data-aos="fade-down-left">
                     <img class="articulo__dividir-imagen1" src="../img/javier.png" alt="Equipo">
                     <ul>
                         <li><span class="articulo__remarcar"> Puesto Laboral:</span> Gerente</li>
@@ -73,7 +75,7 @@
                         <li><span class="articulo__remarcar"> Antecedentes laborales:</span> 20 años</li>
                     </ul>
                 </div>
-                <div class="articulo__dividir4">
+                <div class="articulo__dividir4" data-aos="fade-right">
                     <img class="articulo__dividir-imagen1" src="../img/juan.png" alt="Equipo">
                     <ul>
                         <li><span class="articulo__remarcar"> Puesto Laboral:</span> Atención y servicio técnico</li>
@@ -85,7 +87,7 @@
         </section>
     </main>
     <footer>  
-        <div class="contenedors">
+        <div class="contenedors animate__animated animate__flipInY">
             <h2 class="contenedors-footer__titulo1">MAPA UBICACIÓN</h2>
             <h2 class="contenedors-footer__titulo2">MEDIOS DE PAGOS</h2>
             <iframe class="contenedors-mapa__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13399.298924002136!2d-68.81345516357132!3d-32.9028019791591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eb159067959%3A0x8eba283386e10cf7!2sGuaymall%C3%A9n%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1678593667771!5m2!1ses!2sar" width="200" height="95" style="border-right: solid 1px black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -94,5 +96,9 @@
         </div>    
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

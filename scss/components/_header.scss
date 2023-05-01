@@ -107,5 +107,19 @@
     font-size: 2rem;
     background-color: $color-primario;
 
-}    
+}  
+
+@media (max-width:429px){
+
+    .titulo-productosinformáticos{
+
+        text-align: center;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+}
 
