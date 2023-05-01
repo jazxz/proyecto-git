@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -177,6 +178,167 @@
   text-align: center;
 }
 
+.titulo-productosinformáticos {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  background-color: rgba(231, 119, 27, 0.3843137255);
+}
+
+.contenedors {
+  display: grid;
+  height: 20vw;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(30px, 5vw) minmax(30px, 10vw);
+  background-color: rgb(0, 225, 255);
+  grid-template-areas: "mapa tecnologia futuro" "mapa tecnologia futuro";
+}
+.contenedors-footer__titulo1 {
+  padding-left: 10%;
+  padding-top: 10%;
+  grid-area: mapa;
+  grid-column: 1;
+  grid-row: 1;
+  font-size: large;
+}
+.contenedors-footer__titulo2 {
+  padding-left: 10%;
+  padding-top: 10%;
+  grid-area: futuro;
+  grid-column: 3;
+  grid-row: 1;
+  font-size: large;
+}
+.contenedors-mapa__map {
+  height: 100%;
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+}
+.contenedors-mapa__imagen {
+  height: 100%;
+  width: 100%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.contenedors-mapa__imagen1 {
+  height: 100%;
+  width: 100%;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+@media (min-width: 576px) and (max-width: 1059px) {
+  .contenedors {
+    max-width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(20px, 5vh) minmax(100px, 20vh);
+    grid-template-areas: "mapa frase formas" "mapa frase formas";
+    align-items: center;
+    justify-items: center;
+  }
+  .contenedors-footer__titulo1 {
+    text-overflow: ellipsis;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 10%;
+    grid-column: 1;
+    grid-row: 1;
+    max-height: 100%;
+    white-space: nowrap;
+  }
+  .contenedors-footer__titulo2 {
+    text-overflow: ellipsis;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding-top: 10%;
+    grid-column: 3;
+    grid-row: 1;
+    max-height: 100%;
+    white-space: nowrap;
+  }
+  .contenedors-mapa__map {
+    overflow: hidden;
+    grid-column: 1;
+    grid-row: 2;
+    width: 30vw;
+    height: 20vh;
+  }
+  .contenedors-mapa__imagen {
+    overflow: hidden;
+    grid-column: 2;
+    grid-row: 2;
+    width: 30vw;
+    height: 20vh;
+  }
+  .contenedors-mapa__imagen1 {
+    overflow: hidden;
+    grid-column: 3;
+    grid-row: 2;
+    width: 30vw;
+    height: 20vh;
+  }
+}
+@media (max-width: 575px) {
+  .contenedors {
+    height: 48vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 3vh) repeat(2, 10vh) repeat(1, 3vh) repeat(1, 10vh);
+    grid-template-areas: "Titulo" "Mapa" "Imagen" "Imagen" "Titulo2" "Imagen2" "Imagen2";
+    align-items: center;
+    justify-items: center;
+  }
+  .contenedors-footer__titulo1 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    top: 0;
+    padding: 0%;
+    margin: 0;
+    font-size: small;
+  }
+  .contenedors-mapa__map {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedors-mapa__imagen {
+    grid-column: 1;
+    grid-row: 3;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+  }
+  .contenedors-footer__titulo2 {
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+    top: 0;
+    padding: 0%;
+    margin: 0;
+    font-size: small;
+  }
+  .contenedors-mapa__imagen1 {
+    grid-column: 1;
+    grid-row: 5;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+  }
+}
 .titulo-aparecer-desktop {
   display: none;
 }
@@ -882,7 +1044,7 @@
   align-items: center;
   padding-top: 3%;
 }
-.maincolor__barra__imagenbarra {
+.maincolor__barra .miancolor__imagenbarra {
   justify-content: center;
   align-items: center;
   height: 10%;
@@ -950,6 +1112,470 @@
   width: 75%;
   height: 60%;
   padding-left: 15%;
+}
+
+@media (min-width: 401px) and (max-width: 1059px) {
+  .maincolor__barra {
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    overflow: hidden;
+    width: 100%;
+  }
+  .maincolor__barra .maincolor__imagenbarra {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+  .maincolor .dividir_articulos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(60px, 5vw) repeat(1, 100%);
+    grid-template-areas: "novedades novedades novedades" "PCusoprofesional PCmultimedia PCgamer";
+    overflow: scroll;
+  }
+  .maincolor .dividir_articulos__titulo3 {
+    grid-column: 1/4;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    padding-top: 2%;
+    overflow: hidden;
+    padding-bottom: 5%;
+  }
+  .maincolor .dividir_articulos__articulopro {
+    grid-column: 1;
+    grid-row: 2;
+    overflow: hidden;
+  }
+  .maincolor .dividir_articulos__articulopro .descripcion {
+    text-align: center;
+    font-size: medium;
+  }
+  .maincolor .dividir_articulos__articulopro .imagen5 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15%;
+  }
+  .maincolor .dividir_articulos__articulopro .texto {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .maincolor .dividir_articulos__articulomul {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .maincolor .dividir_articulos__articulomul .descripcion {
+    text-align: center;
+    font-size: small;
+  }
+  .maincolor .dividir_articulos__articulomul .imagen5 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15%;
+  }
+  .maincolor .dividir_articulos__articulomul .texto {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .maincolor .dividir_articulos__articulogamer {
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .maincolor .dividir_articulos__articulogamer .descripcion {
+    text-align: center;
+    font-size: small;
+  }
+  .maincolor .dividir_articulos__articulogamer .imagen5 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15%;
+  }
+  .maincolor .dividir_articulos__articulogamer .texto {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .maincolor__barra {
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    overflow: hidden;
+    width: 100%;
+  }
+  .maincolor__barra .maincolor__imagenbarra {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+  .maincolor .dividir_articulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(60px, 5vw) repeat(3, 40vh);
+    grid-template-areas: "titulo" "PCprofesional" "PCmultimedia" "PCgamer";
+    overflow: scroll;
+  }
+  .maincolor .dividir_articulos__titulo3 {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+  .maincolor .dividir_articulos__articulopro {
+    grid-column: 1;
+    grid-row: 2;
+    overflow: hidden;
+  }
+  .maincolor .dividir_articulos__articulopro .descripcion {
+    text-align: center;
+    font-size: medium;
+  }
+  .maincolor .dividir_articulos__articulopro .imagen5 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15%;
+  }
+  .maincolor .dividir_articulos__articulopro .texto {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .maincolor .dividir_articulos__articulomul {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+  }
+  .maincolor .dividir_articulos__articulomul .descripcion {
+    text-align: center;
+    font-size: small;
+  }
+  .maincolor .dividir_articulos__articulomul .imagen5 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15%;
+  }
+  .maincolor .dividir_articulos__articulomul .texto {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .maincolor .dividir_articulos__articulogamer {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    height: 100%;
+  }
+  .maincolor .dividir_articulos__articulogamer .descripcion {
+    text-align: center;
+    font-size: small;
+  }
+  .maincolor .dividir_articulos__articulogamer .imagen5 {
+    max-width: 100%;
+    height: auto;
+    padding-left: 15%;
+  }
+  .maincolor .dividir_articulos__articulogamer .texto {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+}
+.main1 {
+  margin-left: 20;
+  background-color: greenyellow;
+  display: grid;
+  grid-template-rows: 2fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "Categorias Titulo" "Categorias Seccion1";
+  grid-gap: 0%;
+  padding-right: 20%;
+}
+.main1__estilo {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 1.5rem;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main1__section {
+  grid-row: 2;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+}
+.main1__section1 {
+  grid-row: 2;
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "articulo1 articulo2";
+  grid-gap: 20%;
+}
+.main1__section1 .articulo1 {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  margin-right: 15%;
+}
+.main1__section1 .articulo1 .imagencaja1_descripción1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main1__section1 .articulo1 .imagencaja1__ok {
+  padding-left: 45%;
+}
+.main1__section1 .articulo1 .imagencaja1_descripción2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main1__section1 .articulo1 .imagencaja1__carrito {
+  padding-left: 40%;
+}
+.main1__section1 .articulo2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+.main1__section1 .articulo2 .imagencaja2_descripción1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main1__section1 .articulo2 .imagencaja2__ok {
+  padding-left: 45%;
+}
+.main1__section1 .articulo2 .imagencaja2_descripción2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main1__section1 .articulo2 .imagencaja2__carrito {
+  padding-left: 40%;
+}
+
+@media (min-width: 430px) and (max-width: 1119px) {
+  .main1 {
+    margin-left: 20;
+    background-color: greenyellow;
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "Categorias Titulo" "Categorias Seccion1";
+    grid-gap: 0%;
+    padding-right: 20%;
+  }
+  .main1__estilo {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 1.5rem;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .main1__section {
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .main1__section1 {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "articulo1 articulo2";
+    grid-gap: 10%;
+  }
+  .main1__section1 .articulo1 {
+    width: 30vw;
+    height: 30vw;
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 20%;
+    overflow: scroll;
+  }
+  .main1__section1 .articulo1 .imagencaja1 .pcgamer {
+    max-width: 100%;
+    height: 100%;
+  }
+  .main1__section1 .articulo1 .imagencaja1_descripción1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo1 .imagencaja1__ok {
+    padding-left: 45%;
+    width: 60%;
+    height: 60%;
+  }
+  .main1__section1 .articulo1 .imagencaja1_descripción2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo1 .imagencaja1__carrito {
+    width: 60%;
+    height: 60%;
+  }
+  .main1__section1 .articulo2 {
+    width: 30vw;
+    height: 30vw;
+    grid-row: 1;
+    grid-column: 2;
+    overflow: scroll;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .main1__section1 .articulo2 .imagencaja2 .pcryzen {
+    width: 100%;
+    height: 100%;
+  }
+  .main1__section1 .articulo2 .imagencaja2_descripción1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo2 .imagencaja2__ok {
+    padding-left: 45%;
+    width: 60%;
+    height: 60%;
+  }
+  .main1__section1 .articulo2 .imagencaja2_descripción2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo2 .imagencaja2__carrito {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media (max-width: 429px) {
+  .main1 {
+    margin-left: 20;
+    background-color: greenyellow;
+    display: grid;
+    grid-template-rows: minmax(69px, 5vw) minmax(450px, 20vw) 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "Titulo" "Seccion1";
+    grid-gap: 0%;
+    padding-right: 20%;
+    overflow: scroll;
+  }
+  .main1__estilo {
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+  }
+  .main1__section {
+    grid-row: 2;
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .main1__section1 {
+    grid-row: 3;
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(450px, 10vw) minmax(450px, 15vw);
+    grid-template-areas: "articulo1" "articulo2";
+  }
+  .main1__section1 .articulo1 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .main1__section1 .articulo1 .imagencaja1 .pcgamer {
+    max-width: 90vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+  .main1__section1 .articulo1 .imagencaja1_descripción1 {
+    max-width: 90vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo1 .imagencaja1__ok {
+    max-width: 90vw;
+    padding-left: 40%;
+    width: 50%;
+    height: 50%;
+  }
+  .main1__section1 .articulo1 .imagencaja1_descripción2 {
+    max-width: 90vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo1 .imagencaja1__carrito {
+    max-width: 90vw;
+    padding-left: 40%;
+    width: 50%;
+    height: 50%;
+  }
+  .main1__section1 .articulo2 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .main1__section1 .articulo2 .imagencaja2 .pcryzen {
+    max-width: 90vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+  }
+  .main1__section1 .articulo2 .imagencaja2_descripción1 {
+    max-width: 90vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo2 .imagencaja2__ok {
+    max-width: 90vw;
+    padding-left: 40%;
+    width: 50%;
+    height: 50%;
+  }
+  .main1__section1 .articulo2 .imagencaja2_descripción2 {
+    max-width: 90vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main1__section1 .articulo2 .imagencaja2__carrito {
+    max-width: 90vw;
+    padding-left: 40%;
+    width: 50%;
+    height: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
