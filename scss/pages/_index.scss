@@ -35,7 +35,7 @@
 .contenedor-main{
 
     display:grid;
-    overflow: scroll;
+   
     grid-template-columns: 1fr minmax(360px,25vw);
     grid-template-rows: 70vw;
     background-color: $color-primario;
@@ -66,7 +66,7 @@
             }
 
             &__imagen{
-                padding-top: 20%;
+                padding-top: 10%;
             }
             &__imagen-carrito{
                 padding-top: 30%;
@@ -135,78 +135,63 @@
 
             align-items: center;
             justify-content: center;
+           
 
-            &__label-estrellas{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-            }
+           
 
             
         }
+
+
+
     }
+
+    &__label-estrellas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    &__aside-cambiar{
+
+        .form-action{
+
+            &__label-estrellas{
+
+                padding-top: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .btn-aside{
+                padding-top: 10px;
+                padding-bottom: 10%;
+                gap: 10px;
+               
+                
+                &__boton{
+
+                    
+                    border-radius: 2px;
+                    font-size: small;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+    
 } 
-
-.contenedors{
-
-    display:grid;
-    height: 20vw;
-    gap:20px;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: minmax(30px,5vw) minmax(30px,10vw);
-    background-color: rgb(0, 225, 255);
-    grid-template-areas: 
-    "mapa tecnologia futuro"
-    "mapa tecnologia futuro";
-
-    &-footer__titulo1{
-        padding-left: 10%;
-        padding-top: 10%;
-        grid-area: mapa;
-        grid-column: 1;
-        grid-row: 1 ;
-        font-size: large;
-    }
-
-    &-footer__titulo2{
-        padding-left: 10%;
-        padding-top: 10%;
-        grid-area: futuro;
-        grid-column: 3;
-        grid-row: 1 ;
-        font-size: large;
-    }
-
-    &-mapa__map{
-        
-        height: 100%;
-        width: 100% ;
-        grid-column: 1;
-        grid-row: 2;
-
-    }
-
-    &-mapa__imagen{
-
-        height: 100%;
-        width: 100% ;
-        grid-column: 2;
-        grid-row: 2;
-
-    }
-
-    &-mapa__imagen1{
-
-        height: 100%;
-        width: 100% ;
-        grid-column: 3;
-        grid-row: 2;
-
-    }
-}
-
-
 
 @media (min-width:576px) and (max-width:1059px) {
 
@@ -366,34 +351,37 @@
         
         &-mapa__map{
 
-            overflow: hidden;
+            object-fit: cover;
             grid-column: 1;
             grid-row: 2;
-            width: 30vw; 
+            width: 100%; 
             height: 20vh;
 
         }
         
         &-mapa__imagen{
 
-            overflow: hidden;
+            object-fit: cover;
             grid-column: 2;
             grid-row: 2;
-            width: 30vw; 
+            width: 100%; 
             height: 20vh;
         }
 
         &-mapa__imagen1{
 
-            overflow: hidden;
+            object-fit: cover;
             grid-column: 3;
             grid-row: 2;
-            width: 30vw; 
+            width: 100%; 
             height: 20vh;
         
         }
 
     }
+
+
+    
 
 }
 
@@ -411,8 +399,6 @@
         background-color: gold;
         display: flex;
         flex-direction: column;
-        overflow-y: scroll;
-        scroll-snap-type: y mandatory;
         max-height: unset;
 
         &__section{
@@ -574,5 +560,6 @@
         }
      
     }
+
 
 }
