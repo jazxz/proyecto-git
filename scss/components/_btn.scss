@@ -1,13 +1,13 @@
 .formheader-btn{
-    width: 100px;        
+    width: 100px;
     margin: 1vh;
-    background-color: #1b8eaa;
+    background-color: #f7f5f8;
     border-radius: 5px;
     }
 .formheader-btn1{
-    width: 100px;        
+    width: 100px;
     margin: 1vh;
-    background-color: #1b8eaa;
+    background-color: #f7f5f8;
     border-radius: 5px;
     }
 
@@ -15,20 +15,26 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    padding-left: 25%;
     row-gap: 8px;
 
 
     &__boton{
-            
+
         font-size: medium;
         font-family: $fuente-principal;
         border:$color-secundario 2px bold;
         border-radius: 2px;
         }
-    } 
-    
-    
+    }
+
+    .btn-aside__boton{
+
+        font-size: 15px;
+        width: 22vw ;
+        background-color: #f7f5f8;
+        border-radius: 5px;
+    }
+
 
 @media (min-width:576px) and (max-width:1059px) {
 
@@ -47,9 +53,16 @@
             text-align: center;
             justify-content: center;
         }
-         
+
     }
-    
+    .btn-aside__boton{
+
+        font-size: 10px;
+        width: 22vw ;
+        background-color: #f7f5f8;
+        border-radius: 5px;
+    }
+
 }
 
 @media (max-width:575px){
@@ -74,6 +87,26 @@
 
         font-size: 10px;
         width: 22vw ;
+        background-color: #f7f5f8;
+        border-radius: 5px;
     }
 
-}   
+    .btn-aside{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        row-gap: 8px;
+        padding-left: 25%;
+
+
+        &__boton{
+
+            font-size: medium;
+            font-family: $fuente-principal;
+            border:$color-secundario 2px bold;
+            border-radius: 2px;
+            }
+        }
+
+
+}

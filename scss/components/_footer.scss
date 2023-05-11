@@ -1,3 +1,4 @@
+
 .contenedors{
 
     display:grid;
@@ -5,14 +6,17 @@
     gap:30px;
     grid-template-columns:  repeat(3,1fr);
     grid-template-rows: minmax(30px,5vw) minmax(30px,10vw);
-    background-color: rgb(0, 225, 255);
-    grid-template-areas:none 
+    background-color: rgb(253, 254, 254);
+    grid-template-areas:none
    ;
 
+    footer {
+        border: 1px solid black
+    }
     &-footer__titulo1{
         align-items: center;
         justify-content: center;
-       
+
         padding-top: 10%;
         text-align: center;
         grid-column: 1;
@@ -25,12 +29,25 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-       
+
+        padding-top: 10%;
+        grid-column: 2;
+        grid-row: 1 ;
+        font-size: large;
+    }
+
+    &-footer__titulo3{
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
         padding-top: 10%;
         grid-column: 3;
         grid-row: 1 ;
         font-size: large;
     }
+
 
     .contenedors-mapa{
         grid-column: 1;
@@ -41,7 +58,7 @@
 
 
         &-mapa__map{
-        
+
             height: 100%;
             width: 100% ;
             object-fit: cover;
@@ -50,11 +67,13 @@
     }
 
     .contenedors-map{
-        display: flex;
-        grid-column: 2;
-        grid-row: 2;
+
         align-items: center;
-        justify-content: center;
+
+        display: flex;
+        flex-flow: column;
+        padding: 30px;
+        justify-content: space-between;
 
         &-mapa__imagen{
 
@@ -64,7 +83,7 @@
 
         }
 
-    }    
+    }
 
     .contenedors-map1{
 
@@ -74,17 +93,17 @@
         align-items: center;
         justify-content: center;
 
-        
+
         &-mapa__imagen1{
 
-            height: 100%;
+            height: 50%;
             width: 100% ;
             object-fit: cover;
         }
 
     }
 
-}    
+}
 
 @media (min-width:576px) and (max-width:1059px) {
 
@@ -95,13 +114,13 @@
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: minmax(20px,5vh) minmax(100px,20vh);
-        grid-template-areas: none 
+        grid-template-areas: none
         ;
-        align-items: center; 
+        align-items: center;
         justify-items: center;
 
         &-footer__titulo1{
-        
+
             text-overflow: ellipsis;
             justify-content: center;
             align-items: center;
@@ -111,10 +130,24 @@
             grid-row: 1;
             max-height: 100%;
             white-space: nowrap;
-       
+
         }
 
         &-footer__titulo2{
+
+            text-overflow: ellipsis;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            padding-top: 10%;
+            grid-column: 2;
+            grid-row: 1;
+            max-height: 100%;
+            white-space: nowrap;
+
+        }
+
+        &-footer__titulo3{
 
             text-overflow: ellipsis;
             justify-content: center;
@@ -125,9 +158,9 @@
             grid-row: 1;
             max-height: 100%;
             white-space: nowrap;
-     
+
         }
-        
+
         .contenedors-mapa{
             grid-column: 1;
             grid-row: 2;
@@ -137,9 +170,9 @@
 
             &-mapa__map{
 
-                width: 100%; 
+                width: 100%;
                 height: 100%;
-            }  
+            }
         }
 
         .contenedors-map{
@@ -148,10 +181,10 @@
             grid-row: 2;
             align-items: center;
             justify-content: center;
-        
+
             &-mapa__imagen{
 
-                width: 100%; 
+                width: 100%;
                 height: 100%;
 
             }
@@ -167,32 +200,32 @@
 
             &-mapa__imagen1{
 
-                
-                width: 100%; 
+
+                width: 50%;
                 height: 100%;
-        
+
             }
         }
 
     }
 
-}    
+}
 
 @media (max-width:575px){
 
     .contenedors{
 
-       
+
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 3vh) repeat(2, 10vh) repeat(1, 3vh) repeat(1, 20vh) ;
-        grid-template-areas: 
+        grid-template-areas:
         none
         ;
 
-        align-items: center; 
+        align-items: center;
         justify-items: center;
-        
+
         &-footer__titulo1{
 
             grid-column: 1;
@@ -202,7 +235,7 @@
             padding:0%;
             margin: 0;
             font-size: small;
-    
+
         }
 
         .contenedors-mapa{
@@ -211,36 +244,50 @@
             justify-content: center;
             align-items: center;
             justify-content: center;
-            align-items: center;    
-        
+            align-items: center;
+
                 &-mapa__map{
 
                 width: 200%;
                 height: 100%;
-            }        
+            }
+        }
+
+
+
+        &-footer__titulo2{
+
+            grid-column: 1;
+            grid-row: 3;
+            text-align: center;
+            top: 0;
+            padding:0%;
+            margin: 0;
+            font-size: small;
+
         }
 
         .contenedors-map{
             grid-column: 1;
-            grid-row: 3;
+            grid-row: 4;
             justify-content: center;
             align-items: center;
             justify-content: center;
-            
+
             &-mapa__imagen{
 
                 width: 200%;
                 height: 100%;
 
-            }    
+            }
 
         }
 
-        &-footer__titulo2{
+        &-footer__titulo3{
 
 
             grid-column: 1;
-            grid-row: 4;
+            grid-row: 5;
             text-align: center;
             top: 0;
             padding:0%;
@@ -252,18 +299,18 @@
         .contenedors-map1{
 
             grid-column: 1;
-            grid-row: 5;
+            grid-row: 6;
             justify-content: center;
             align-items: center;
             justify-content: center;
 
             &-mapa__imagen1{
 
-                width: 100%;
+                width: 50%;
                 height: 100%;
             }
-        }    
-     
+        }
+
     }
 
-}    
+}

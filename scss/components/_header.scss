@@ -3,7 +3,7 @@
     background: $color-primario;
 
     &__titulo-aparecer-mobile{
-        display: none;  
+        display: none;
     }
 
     &__form{
@@ -12,22 +12,15 @@
         flex-direction: column;
         justify-content: end;
         align-items: end;
-    }    
-          
+    }
+
 }
 
 @media (max-width:575px){
 
     .header{
         background-color:  #e7771b62;
-        display: grid;
-        grid-template-columns: minmax(50px,5vw) 1fr minmax(100px,10vw);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "logo titulo btn-barra"
-        "logo titulo btn-barra"
-        ;
-        
+
         &__titulo-aparecer-mobile{
 
             display: block;
@@ -37,7 +30,7 @@
             grid-column: 2;
             grid-row: 1;
             background: #e7771b62;
-    
+
         }
         &__form{
             display: flex;
@@ -59,7 +52,7 @@
                 width: 100%;
             }
         }
-    }    
+    }
 }
 
 @media (max-width:375px){
@@ -67,21 +60,21 @@
     .header{
 
         background-color: $color-primario;
-    
+
         &__titulo-aparecer-mobile{
 
             display: flex;
             font-size: small;
             align-items: center;
             justify-content: center;
-            padding-left: 10vw;   
+            padding-left: 10vw;
         }
 
         .navbar.navbar-expand-sm.bg-body-tertiary{
 
             grid-row: 2;
             grid-column: 1;
-            
+
         }
     }
 }
@@ -107,7 +100,7 @@
     font-size: 2rem;
     background-color: $color-primario;
 
-}  
+}
 
 @media (max-width:429px){
 
