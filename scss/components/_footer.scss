@@ -1,6 +1,7 @@
 
 .contenedors{
 
+
     display:grid;
     height: 20vw;
     gap:30px;
@@ -11,8 +12,11 @@
    ;
 
     footer {
-        border: 1px solid black
-    }
+        border: 1px solid black;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        }
     &-footer__titulo1{
         align-items: center;
         justify-content: center;
@@ -57,11 +61,14 @@
         justify-content: center;
 
 
-        &-mapa__map{
+        &__map{
 
             height: 100%;
             width: 100% ;
             object-fit: cover;
+            margin-left: 10px;
+            border: solid 1px black;
+            border-radius: 20px;
 
         }
     }
@@ -162,16 +169,21 @@
         }
 
         .contenedors-mapa{
+
             grid-column: 1;
             grid-row: 2;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            &-mapa__map{
+            &__map{
 
-                width: 100%;
-                height: 100%;
+                width: 50%;
+                height: 7vh;
+                margin-left: 10px;
+                border: solid 1px black;
+                border-radius: 10px;
+
             }
         }
 
@@ -182,7 +194,7 @@
             align-items: center;
             justify-content: center;
 
-            &-mapa__imagen{
+            &__imagen{
 
                 width: 100%;
                 height: 100%;
@@ -192,17 +204,19 @@
 
         .contenedors-map1{
 
+
             display: flex;
             grid-column: 3;
             grid-row: 2;
             align-items: center;
             justify-content: center;
 
-            &-mapa__imagen1{
+            &__imagen1{
 
 
-                width: 50%;
-                height: 100%;
+                width: 100%;
+                height: 6vh;
+                padding-right: 45px;
 
             }
         }
@@ -218,7 +232,7 @@
 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 3vh) repeat(2, 10vh) repeat(1, 3vh) repeat(1, 20vh) ;
+        grid-template-rows: repeat(1, 3vh) repeat(1, 12vh) repeat(1, 3vh) repeat(1, 2vh) repeat(1, 2vh) repeat(1, 3vh) ;
         grid-template-areas:
         none
         ;
@@ -238,7 +252,10 @@
 
         }
 
-        .contenedors-mapa{
+        &-mapa{
+
+
+            height: 15vh;
             grid-column: 1;
             grid-row: 2;
             justify-content: center;
@@ -246,9 +263,9 @@
             justify-content: center;
             align-items: center;
 
-                &-mapa__map{
+            &__map{
 
-                width: 200%;
+                width: 100%;
                 height: 100%;
             }
         }
@@ -266,6 +283,8 @@
             font-size: small;
 
         }
+
+
 
         .contenedors-map{
             grid-column: 1;
@@ -304,7 +323,7 @@
             align-items: center;
             justify-content: center;
 
-            &-mapa__imagen1{
+            &__imagen1{
 
                 width: 50%;
                 height: 100%;
